@@ -52,11 +52,11 @@ Chain strategy: stacked-to-main
 **Work‑unit:** PR 2 (depends on PR 1)
 
 ## Phase 3: CI / Deployment & Capacitor
-- [ ] 3.1 Add GitHub Actions workflow `.github/workflows/deploy.yml` (build web, upload pages artifact)
-- [ ] 3.2 Add optional job `build-apk` (Capacitor sync, Gradle build, upload artifact)
-- [ ] 3.3 Configure Vite `base` for GitHub Pages (`/fogon/`)
-- [ ] 3.4 Add Capacitor Android platform, update `capacitor.config.ts` (`webDir: client/dist`)
-- [ ] 3.5 Create `README.md` deployment section with usage instructions
+- [x] 3.1 Add GitHub Actions workflow `.github/workflows/deploy.yml` (build web, upload pages artifact)
+- [x] 3.2 Add optional job `build-apk` (Capacitor sync, Gradle build, upload artifact)
+- [x] 3.3 Configure Vite `base` for GitHub Pages (`/fogon/`)
+- [x] 3.4 Add Capacitor Android platform, update `capacitor.config.ts` (`webDir: client/dist`)
+- [x] 3.5 Create `README.md` deployment section with usage instructions
 
 **Est. changed lines:** 80‑110
 **Dependencies:** Phase 2
