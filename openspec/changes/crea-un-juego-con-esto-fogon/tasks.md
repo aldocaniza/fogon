@@ -63,14 +63,14 @@ Chain strategy: stacked-to-main
 **Work‑unit:** PR 3 (depends on PR 2)
 
 ## Phase 4: Testing & Documentation
-- [ ] 4.1 Write unit tests for `narrativeEngine.ts` (Vitest, mock scene graph)
-- [ ] 4.2 Write unit tests for `typewriter.ts` (fake timers)
-- [ ] 4.3 Write unit tests for `storage.ts` (mock Storage API)
-- [ ] 4.4 Write API route tests for Express dev server (supertest)
-- [ ] 4.5 Add integration test: render `SceneView`, simulate choice click, assert scene change
-- [ ] 4.6 Add Playwright E2E test: start dev server, play through first two scenes, reload, verify state restored
-- [ ] 4.7 Update `docs/README.md` with architecture diagram and contribution guide
-- [ ] 4.8 Add `CHANGELOG.md` entry for initial release
+- [x] 4.1 Write unit tests for `narrativeEngine.ts` (Vitest, mock scene graph)
+- [x] 4.2 Write unit tests for `typewriter.ts` (fake timers)
+- [x] 4.3 Write unit tests for `storage.ts` (mock Storage API)
+- [x] 4.4 Write API route tests for Express dev server (supertest)
+- [x] 4.5 Add integration test: render `SceneView`, simulate choice click, assert scene change
+- [x] 4.6 Add Playwright E2E test: start dev server, play through first two scenes, reload, verify state restored
+- [x] 4.7 Update `docs/README.md` with architecture diagram and contribution guide
+- [x] 4.8 Add `CHANGELOG.md` entry for initial release
 
 **Est. changed lines:** 100‑130
 **Dependencies:** Phases 1‑3
