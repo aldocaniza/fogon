@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@client/*": ["client/src/*"],
+      "@server/*": ["server/src/*"]
+    },
+    "composite": true,
+    "outDir": "dist"
+  },
+  "include": ["client/src", "server/src"],
+  "references": [
+    { "path": "./client" },
+    { "path": "./server" }
+  ]
+}
