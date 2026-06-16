@@ -1,0 +1,111 @@
+{
+  "scenes": [
+    {
+      "id": "start",
+      "title": "3 AM",
+      "body": "Ya asomaban las 3 am de la madrugada, cuando un estrepitoso crepitar me desembarazó de mi letargo. Entre sueños balbucee algunas palabras en un idioma arcaico desconocido y hasta macabro. Me sobresaltó no poder olvidar tan espeluznante cantata que sonaba y resonaba a la frecuencia y longitud de mi alma humana.",
+      "mood": "ominous",
+      "choices": [
+        {
+          "target": "investigate",
+          "preview": "Investigar el origen del sonido"
+        },
+        {
+          "target": "hide",
+          "preview": "Quedarse inmóvil en la cama"
+        }
+      ]
+    },
+    {
+      "id": "investigate",
+      "title": "El bosque",
+      "body": "Me incorporo y abandono la seguridad de la posada para adentrarme en las profundidades de las fantasmagóricas sombras gélidas. Llevo conmigo mi revolver y una linterna de bolsillo. Conforme mis pasos se convierten en cientos de metros, me adentro más y más en el bosque repleto de árboles y matorrales que cubren la creciente luna.",
+      "mood": "ominous",
+      "choices": [
+        {
+          "target": "clearing",
+          "preview": "Seguir el sonido hasta un claro del bosque"
+        },
+        {
+          "target": "return_inn",
+          "preview": "Regresar a la posada",
+          "requires": { "has_fear": false }
+        }
+      ]
+    },
+    {
+      "id": "hide",
+      "title": "Parálisis",
+      "body": "Te quedas paralizado, escuchando el crepitar que se acerca lentamente. El miedo te consume y la cantata infernal llena tu mente de visiones grotescas. No puedes moverte. El sonido se intensifica hasta que todo se vuelve negro.",
+      "mood": "ominous",
+      "choices": [
+        {
+          "target": "start",
+          "preview": "Despertar de nuevo...",
+          "sets": { "has_fear": true }
+        }
+      ]
+    },
+    {
+      "id": "clearing",
+      "title": "El Fogón",
+      "body": "Llegas a un claro del bosque. La luna está cubierta por espesas nubes de tormenta. No muy lejos, un fogón de varios metros de altura se alza frente a ti. Su color naranja y rojo escarlata contrastan con el paisaje sombrío. Dentro de la fogata, una gran cantidad de cuerpos son incinerados. No son animales ni humanos, sino quimeras imposibles: seres humanoides de proporciones grotescas.",
+      "mood": "ominous",
+      "choices": [
+        {
+          "target": "dance",
+          "preview": "Acercarse al fogón"
+        },
+        {
+          "target": "flee_forest",
+          "preview": "Huir del claro",
+          "requires": { "has_courage": true }
+        }
+      ]
+    },
+    {
+      "id": "return_inn",
+      "title": "La posada",
+      "body": "Regresas a la posada, pero la cantata no cesa. Las paredes parecen respirar y las sombras bailan a tu alrededor. No hay escapatoria. El fogón te encontrará de una forma u otra.",
+      "mood": "ominous",
+      "choices": [
+        {
+          "target": "clearing",
+          "preview": "Salir al bosque nuevamente"
+        }
+      ]
+    },
+    {
+      "id": "dance",
+      "title": "La danza",
+      "body": "De repente, la melodía atípica sacude cada uno de tus músculos. Tu cuerpo danza de forma antinatural, con movimientos espasmódicos y retorcidos contra tu voluntad. Eres absorbido por la música y te acercas peligrosamente al fogón. Detrás de ti escuchas voces guturales en el idioma olvidado que soñaste. Los seres se arrojan uno a uno al fuego mientras la música se vuelve frenética.",
+      "mood": "ominous",
+      "choices": [
+        {
+          "target": "epilogue",
+          "preview": "Sucumbir al hechizo"
+        }
+      ]
+    },
+    {
+      "id": "flee_forest",
+      "title": "La huida",
+      "body": "Corres entre los árboles sin mirar atrás. Las llamas del fogón iluminan el bosque como un amanecer infernal pero te alejas. Sabes que la cantata te seguirá, pero por ahora has escapado. Sin embargo, en tu corazón comprendes que esta noche volverás a escucharla.",
+      "mood": "ominous",
+      "choices": [
+        {
+          "target": "start",
+          "preview": "Amanece... pero la melodía regresa",
+          "sets": { "has_fear": true }
+        }
+      ]
+    },
+    {
+      "id": "epilogue",
+      "title": "El rito de iniciación",
+      "body": "Permaneces allí, tirado en el suelo, con el cuerpo petrificado y los ojos llenos de lágrimas. Observas cómo las criaturas se arrojan al fuego una por una, hasta que no queda ninguna. Solo tú, el espectador. Las llamas desaparecen antes del alba, y todos esos seres son convertidos en cenizas negras. Comprendes que aquella noche no saliste ileso por suerte, sino porque fue tu rito de iniciación junto al fogón. Y ahora, años después, has vuelto.",
+      "mood": "ominous",
+      "choices": []
+    }
+  ]
+}

@@ -1,8 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useGame } from '../game/GameContext';
-import { useTypewriter } from '../game/typewriter';
 import { Scene } from '../types';
-import { useTypewriter as UseTypewriterHook } from '../game/typewriter';
 
 const SceneView: React.FC = () => {
   const { state } = useGame();
