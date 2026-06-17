@@ -77,7 +77,7 @@ jobs:
         working-directory: ./client # <--- NEW: Run npm ci in client directory
 
       - name: Install Capacitor CLI
-        run: npm install @capacitor/cli @capacitor/core
+        run: npm install @capacitor/cli @capacitor/core @capacitor/android
         working-directory: ./client # <--- NEW: Run in client directory
 
       - name: Add Android platform
