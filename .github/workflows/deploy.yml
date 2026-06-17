@@ -63,10 +63,10 @@ jobs:
         uses: actions/deploy-pages@v4
 
   build-apk:
-    name: Build APK (Optional)
+    name: Build APK (Required)
     needs: build-web
     runs-on: ubuntu-latest
-    if: false
+    if: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
