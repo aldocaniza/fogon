@@ -1,5 +1,5 @@
 import React from 'react';
-import { SceneView } from './scenes/SceneView';
+import SceneView from './scenes/SceneView';
 import { GameProvider } from './game/GameContext';
 import { FireParticles } from './ui/FireParticles';
 import './theme.css';

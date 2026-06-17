@@ -1,6 +1,6 @@
 import React, { createContext, useReducer, useContext, ReactNode, Dispatch } from 'react';
 import { GameState, Scene } from '../types';
-import storyData from '../../story/fogon-chapter-1.json';
+import storyData from '../../../story/fogon-chapter-1.json';
 
 type Action =
   | { type: 'INIT' }
